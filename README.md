@@ -1,14 +1,12 @@
 # :zap: Angular PWA SSR
 
-* Angular PWA with Server Side Rendering (SSR)
+* Angular PWA SSR sandbox to get Server Side Rendering working with a fulll-stack Progressive Web App and deploy to Firestore/Netlify
+* **Note:** to open web links in a new window use: _ctrl+click on link_
 
-![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-pwa-ssr?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/AndrewJBateman/angular-pwa-ssr?style=for-the-badge)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/angular-pwa-ssr?style=for-the-badge)
-![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/angular-pwa-ssr?style=for-the-badge)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/AndrewJBateman/angular-pwa-ssr?style=for-the-badge)
-
-**\* Note: to open web links in a new window use: _ctrl+click on link_**
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-pwa-ssr?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/angular-pwa-ssr?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/angular-pwa-ssr?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/angular-pwa-ssr?style=plastic)
 
 ## :page_facing_up: Table of contents
 
@@ -44,7 +42,6 @@
 
 * Install dependencies using `npm i`
 * Run `npm outdated` to see if any npm dependencies are outdated.
-* Get yourself API keys for the Nasa, Google Maps and News apps
 * Run `ng serve` for a non-SSR dev server. Frontend will open at `http://localhost:4200/` - refreshes on code changes
 * Run `npm run dev:ssr` for an SSR dev server. Frontend will open at `http://localhost:4200/` - refreshes on code changes
 * Run `npm run lint` to lint test entire client-side codebase using TSLint.
@@ -73,12 +70,16 @@
 
 * Status: Working basic SSR app with PWA. near perfect Lighthouse score
 * Testing: not tested yet
-* To-Do: add content
+* To-Do: add deployment, add content
 
 ## :clap: Inspiration/General Tools
 
-* [Techiediaries: Angular 10/9 SEO: Adding Title and Meta Tags to Your Universal App](https://www.techiediaries.com/angular-seo-title-and-meta-tags/)
+* tba
+
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
 
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
