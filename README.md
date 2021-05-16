@@ -1,6 +1,6 @@
 # :zap: Angular PWA SSR
 
-* Angular PWA SSR sandbox to get Server Side Rendering working with a fulll-stack Progressive Web App and deploy to Netlify
+* Angular PWA SSR sandbox to get Server Side Rendering working with a Progressive Web App and deploy.
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-pwa-ssr?style=plastic)
@@ -21,7 +21,8 @@
 
 ## :books: General info
 
-* Using Angular Server Side Rendering
+* Using Angular Server Side Rendering (ngUniversal) and Service Workers for a Progressive Web App
+* Node v14, npm v7, @angular/cli v12 & @angular/core v12 installed globally
 
 ## :camera: Screenshots
 
@@ -30,8 +31,8 @@
 ## :signal_strength: Technologies
 
 * [Angular framework v12](https://angular.io/)
-* [Angular Universal v11](https://angular.io/guide/universal) Server-Side Rendering(SSR) by a Node Express web server
-* [Angular Express Engine v11](https://www.npmjs.com/package/@nguniversal/express-engine) for running Angular Apps on the server for server side rendering
+* [Angular Universal v12](https://angular.io/guide/universal) Server-Side Rendering(SSR) by a Node Express web server
+* [Angular Express Engine v12](https://www.npmjs.com/package/@nguniversal/express-engine) for running Angular Apps on the server for server side rendering
 * [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) to check quality of website
 
 ## :floppy_disk: Setup - Backend
@@ -68,7 +69,7 @@
 
 ## :clipboard: Status, Testing & To-Do List
 
-* Status: Working basic SSR app with PWA. near perfect Lighthouse score
+* Status: Working basic SSR app with PWA. 100% perfect Lighthouse score - 16 may 2021
 * Testing: not tested yet
 * To-Do: add deployment, add content
 

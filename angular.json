@@ -3,9 +3,12 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-ssr-api": {
+    "angular-pwa-ssr": {
       "projectType": "application",
       "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        },
         "@schematics/angular:application": {
           "strict": true
         }
@@ -17,11 +20,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-ssr-api/browser",
+            "outputPath": "dist/angular-pwa-ssr/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets",
@@ -30,31 +34,14 @@
               "src/robots.txt"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [],
-            "vendorChunk": true,
-            "extractLicenses": false,
-            "buildOptimizer": false,
-            "sourceMap": true,
-            "optimization": false,
-            "namedChunks": true
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "namedChunks": false,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -67,26 +54,41 @@
                   "maximumError": "4kb"
                 }
               ],
-              "serviceWorker": true,
-              "ngswConfigPath": "ngsw-config.json"
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
             }
-          }
+          },
+          "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "angular-ssr-api:build"
-          },
           "configurations": {
             "production": {
-              "browserTarget": "angular-ssr-api:build:production"
+              "browserTarget": "angular-pwa-ssr:build:production"
+            },
+            "development": {
+              "browserTarget": "angular-pwa-ssr:build:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-ssr-api:build"
+            "browserTarget": "angular-pwa-ssr:build"
           }
         },
         "test": {
@@ -96,51 +98,25 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
+            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets",
               "src/manifest.webmanifest"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json",
-              "tsconfig.server.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        },
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-ssr-api:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "angular-ssr-api:serve:production"
-            }
           }
         },
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/angular-ssr-api/server",
+            "outputPath": "dist/angular-pwa-ssr/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json",
-            "sourceMap": true,
-            "optimization": false
+            "inlineStyleLanguage": "scss"
           },
           "configurations": {
             "production": {
@@ -150,40 +126,49 @@
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
                 }
-              ],
-              "sourceMap": false,
-              "optimization": true
+              ]
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false
             }
-          }
+          },
+          "defaultConfiguration": "production"
         },
         "serve-ssr": {
           "builder": "@nguniversal/builders:ssr-dev-server",
-          "options": {
-            "browserTarget": "angular-ssr-api:build",
-            "serverTarget": "angular-ssr-api:server"
-          },
           "configurations": {
+            "development": {
+              "browserTarget": "angular-pwa-ssr:build:development",
+              "serverTarget": "angular-pwa-ssr:server:development"
+            },
             "production": {
-              "browserTarget": "angular-ssr-api:build:production",
-              "serverTarget": "angular-ssr-api:server:production"
+              "browserTarget": "angular-pwa-ssr:build:production",
+              "serverTarget": "angular-pwa-ssr:server:production"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "browserTarget": "angular-ssr-api:build:production",
-            "serverTarget": "angular-ssr-api:server:production",
             "routes": [
               "/"
             ]
           },
           "configurations": {
-            "production": {}
-          }
+            "production": {
+              "browserTarget": "angular-pwa-ssr:build:production"
+            },
+            "development": {
+              "browserTarget": "angular-pwa-ssr:build:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
   },
-  "defaultProject": "angular-ssr-api"
+  "defaultProject": "angular-pwa-ssr"
 }

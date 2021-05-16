@@ -1,4 +1,0 @@
-[build]
-  command = "npm run build:ssr"
-  functions = "netlify/functions"
-  publish = "dist/angular-ssr-api/browser"

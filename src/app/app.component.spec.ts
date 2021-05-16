@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-ssr-api'`, () => {
+  it(`should have as title 'angular-pwa-ssr'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-ssr-api');
+    expect(app.title).toEqual('angular-pwa-ssr');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('angular-ssr-api app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('angular-pwa-ssr app is running!');
   });
 });
