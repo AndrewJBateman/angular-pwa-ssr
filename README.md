@@ -26,7 +26,7 @@
 
 ## :camera: Screenshots
 
-![Frontend screenshot](./img/lighthoouse.png)
+![Frontend screenshot](./img/lighthouse.png)
 
 ## :signal_strength: Technologies
 
@@ -53,9 +53,32 @@
 
 ## :computer: Code Examples
 
-* function to...
+* function to serve browser content using SSR - code from ngUniversal
 
 ```typescript
+// The Express app is exported so that it can be used by serverless Functions.
+export function app(): express.Express {
+  const server = express();
+  const distFolder = join(process.cwd(), 'dist/angular-pwa-ssr/browser');
+  const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
+
+  server.engine('html', ngExpressEngine({
+    bootstrap: AppServerModule,
+  }));
+
+  server.set('view engine', 'html');
+  server.set('views', distFolder);
+
+  server.get('*.*', express.static(distFolder, {
+    maxAge: '1y'
+  }));
+
+  server.get('*', (req, res) => {
+    res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
+  });
+
+  return server;
+}
 
 ```
 
@@ -71,7 +94,7 @@
 
 ## :clap: Inspiration/General Tools
 
-* tba
+* Google
 
 ## :file_folder: License
 
