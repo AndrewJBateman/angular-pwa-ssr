@@ -1,6 +1,6 @@
 # :zap: Angular PWA SSR
 
-* Angular PWA SSR sandbox to get Server Side Rendering working with a fulll-stack Progressive Web App and deploy to Firestore/Netlify
+* Angular PWA SSR sandbox to get Server Side Rendering working with a fulll-stack Progressive Web App and deploy to Netlify
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-pwa-ssr?style=plastic)
@@ -29,7 +29,7 @@
 
 ## :signal_strength: Technologies
 
-* [Angular framework v11](https://angular.io/)
+* [Angular framework v12](https://angular.io/)
 * [Angular Universal v11](https://angular.io/guide/universal) Server-Side Rendering(SSR) by a Node Express web server
 * [Angular Express Engine v11](https://www.npmjs.com/package/@nguniversal/express-engine) for running Angular Apps on the server for server side rendering
 * [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) to check quality of website
