@@ -1,6 +1,6 @@
 # :zap: Angular PWA SSR
 
-* Angular PWA SSR sandbox to get Server Side Rendering working with a Progressive Web App and deploy.
+* Angular PWA SSR sandbox to get Server Side Rendering working with a Progressive Web App an then deploy.
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-pwa-ssr?style=plastic)
@@ -26,7 +26,7 @@
 
 ## :camera: Screenshots
 
-![Frontend screenshot](./img/home.jpg)
+![Frontend screenshot](./img/lighthoouse.png)
 
 ## :signal_strength: Technologies
 
@@ -35,11 +35,7 @@
 * [Angular Express Engine v12](https://www.npmjs.com/package/@nguniversal/express-engine) for running Angular Apps on the server for server side rendering
 * [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) to check quality of website
 
-## :floppy_disk: Setup - Backend
-
-* Install dependencies using `npm i`
-
-## :floppy_disk: Setup - Frontend
+## :floppy_disk: Setup
 
 * Install dependencies using `npm i`
 * Run `npm outdated` to see if any npm dependencies are outdated.
@@ -63,15 +59,15 @@
 
 ```
 
-## :cool: Features - Frontend
+## :cool: Features
 
-* tba
+* Dummy `Robots.txt` & `sitemap.xml` documents added to get perfect Lighthouse score
 
 ## :clipboard: Status, Testing & To-Do List
 
 * Status: Working basic SSR app with PWA. 100% perfect Lighthouse score - 16 may 2021
 * Testing: not tested yet
-* To-Do: add deployment, add content
+* To-Do: add deployment, add content.  `Robots.txt` & `sitemap.xml` files will need updating with correct data
 
 ## :clap: Inspiration/General Tools
 
