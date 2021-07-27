@@ -45,6 +45,7 @@
 * Run `npm run build` to generate a build file without SSR
 * Run `npm run build:ssr` to generate a build file with SSR. Add `defer` to browser css file ref.
 * Run `npm run serve:ssr` to see on a dev server `http://localhost:4000`
+* Run `npm run prerender` to prerender SSR app
 
 ## :wrench: Testing
 
