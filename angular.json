@@ -159,10 +159,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-pwa-ssr:build:production"
+              "browserTarget": "angular-pwa-ssr:build:production",
+              "serverTarget": "angular-pwa-ssr:server:production"
             },
             "development": {
-              "browserTarget": "angular-pwa-ssr:build:development"
+              "browserTarget": "angular-pwa-ssr:build:development",
+              "serverTarget": "angular-pwa-ssr:server:production"
             }
           },
           "defaultConfiguration": "production"
