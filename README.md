@@ -1,6 +1,6 @@
 # :zap: Angular PWA SSR
 
-* Angular PWA SSR sandbox to get Server Side Rendering working with a Progressive Web App an then deploy.
+* Angular app with Server Side Rendering working as a Progressive Web App. Deployed to Netlify.
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-pwa-ssr?style=plastic)
@@ -10,14 +10,18 @@
 
 ## :page_facing_up: Table of contents
 
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+* [:zap: Angular PWA SSR](#zap-angular-pwa-ssr)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:flashlight: Testing](#flashlight-testing)
+  * [:computer: Code Examples](#computer-code-examples)
+  * [:cool: Features](#cool-features)
+  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+  * [:clap: Inspiration](#clap-inspiration)
+  * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
 
@@ -38,10 +42,9 @@
 ## :floppy_disk: Setup
 
 * Install dependencies using `npm i`
-* Run `npm outdated` to see if any npm dependencies are outdated.
+* Run `npm outdated` to see if any npm dependencies are outdated. Note: @types/node kept at older version to prevent errors
 * Run `ng serve` for a non-SSR dev server. Frontend will open at `http://localhost:4200/` - refreshes on code changes
 * Run `npm run dev:ssr` for an SSR dev server. Frontend will open at `http://localhost:4200/` - refreshes on code changes
-* Run `npm run lint` to lint test entire client-side codebase using TSLint.
 * Run `npm run build` to generate a build file without SSR
 * Run `npm run build:ssr` to generate a build file with SSR. Add `defer` to browser css file ref.
 * Run `npm run serve:ssr` to see on a dev server `http://localhost:4000`
@@ -49,8 +52,7 @@
 
 ## :wrench: Testing
 
-* Run `ng test` to run Jasmine unit tests via [Karma](https://karma-runner.github.io)
-* Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* Run `ng test` to run Jasmine unit tests via [Karma](https://karma-runner.github.io) - passes 2/2 tests
 
 ## :computer: Code Examples
 
@@ -89,9 +91,9 @@ export function app(): express.Express {
 
 ## :clipboard: Status, Testing & To-Do List
 
-* Status: Working basic SSR app with PWA. 100% perfect Lighthouse score - 16 may 2021
+* Status: Working basic SSR app with PWA deployed to Netlify. 100% perfect Lighthouse score
 * Testing: not tested yet
-* To-Do: add deployment, add content.  `Robots.txt` & `sitemap.xml` files will need updating with correct data
+* To-Do: Add content. `Robots.txt` & `sitemap.xml` files will need updating with correct data
 
 ## :clap: Inspiration/General Tools
 
