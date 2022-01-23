@@ -26,7 +26,6 @@
 ## :books: General info
 
 * Using Angular Server Side Rendering (ngUniversal) and Service Workers for a Progressive Web App
-* Node v14, npm v7, @angular/cli v12 & @angular/core v12 installed globally
 
 ## :camera: Screenshots
 
@@ -34,19 +33,19 @@
 
 ## :signal_strength: Technologies
 
-* [Angular framework v12](https://angular.io/)
-* [Angular Universal v12](https://angular.io/guide/universal) Server-Side Rendering(SSR) by a Node Express web server
-* [Angular Express Engine v12](https://www.npmjs.com/package/@nguniversal/express-engine) for running Angular Apps on the server for server side rendering
+* [Angular framework v13](https://angular.io/)
+* [Angular Universal v13](https://angular.io/guide/universal) Server-Side Rendering(SSR) by a Node Express web server
+* [Angular Express Engine v13](https://www.npmjs.com/package/@nguniversal/express-engine) for running Angular Apps on the server for server side rendering
 * [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) to check quality of website
 
 ## :floppy_disk: Setup
 
 * Install dependencies using `npm i`
-* Run `npm outdated` to see if any npm dependencies are outdated. Note: @types/node kept at older version to prevent errors
+* Run `npm outdated` to see if any dependencies are outdated.
 * Run `ng serve` for a non-SSR dev server. Frontend will open at `http://localhost:4200/` - refreshes on code changes
 * Run `npm run dev:ssr` for an SSR dev server. Frontend will open at `http://localhost:4200/` - refreshes on code changes
 * Run `npm run build` to generate a build file without SSR
-* Run `npm run build:ssr` to generate a build file with SSR. Add `defer` to browser css file ref.
+* Run `npm run build:ssr` to generate a build file with SSR. Add `defer` to browser CSS file ref.
 * Run `npm run serve:ssr` to see on a dev server `http://localhost:4000`
 * Run `npm run prerender` to prerender SSR app
 
@@ -82,7 +81,6 @@ export function app(): express.Express {
 
   return server;
 }
-
 ```
 
 ## :cool: Features
@@ -93,7 +91,7 @@ export function app(): express.Express {
 
 * Status: Working basic SSR app with PWA deployed to Netlify. 100% perfect Lighthouse score
 * Testing: not tested yet
-* To-Do: Add content. `Robots.txt` & `sitemap.xml` files will need updating with correct data
+* To-Do: Add Tailwind, add content. `Robots.txt` & `sitemap.xml` files will need updating with correct data
 
 ## :clap: Inspiration/General Tools
 
