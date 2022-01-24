@@ -36,6 +36,7 @@
 * [Angular framework v13](https://angular.io/)
 * [Angular Universal v13](https://angular.io/guide/universal) Server-Side Rendering(SSR) by a Node Express web server
 * [Angular Express Engine v13](https://www.npmjs.com/package/@nguniversal/express-engine) for running Angular Apps on the server for server side rendering
+* [Tailwind CSS v3](https://tailwindcss.com/)
 * [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) to check quality of website
 
 ## :floppy_disk: Setup
@@ -91,7 +92,7 @@ export function app(): express.Express {
 
 * Status: Working basic SSR app with PWA deployed to Netlify. 100% perfect Lighthouse score
 * Testing: not tested yet
-* To-Do: Add Tailwind, add content. `Robots.txt` & `sitemap.xml` files will need updating with correct data
+* To-Do: Add content. `Robots.txt` & `sitemap.xml` files will need updating with correct data
 
 ## :clap: Inspiration/General Tools
 
