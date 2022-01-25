@@ -2,39 +2,12 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://angular-rest-apis.web.app/</loc>
+    <loc>https://ecstatic-turing-a45442.netlify.app/</loc>
   </url>
   <url>
-    <loc>https://angular-rest-apis.web.app/about</loc>
+    <loc>https://ecstatic-turing-a45442.netlify.app/about</loc>
   </url>
   <url>
-    <loc>https://angular-rest-apis.web.app/contact</loc>
-  </url>
-  <url>
-    <loc>https://angular-rest-apis.web.app/signin</loc>
-  </url>
-  <url>
-    <loc>https://angular-rest-apis.web.app/nasa</loc>
-  </url>
-  <url>
-    <loc>https://angular-rest-apis.web.app/crypto</loc>
-  </url>
-  <url>
-    <loc>https://angular-rest-apis.web.app/map</loc>
-  </url>
-  <url>
-    <loc>https://angular-rest-apis.web.app/news</loc>
-  </url>
-  <url>
-    <loc>https://angular-rest-apis.web.app/google-charts</loc>
-  </url>
-  <url>
-    <loc>https://angular-rest-apis.web.app/books</loc>
-  </url>
-  <url>
-    <loc>https://angular-rest-apis.web.app/bestsellers</loc>
-  </url>
-  <url>
-    <loc>https://angular-rest-apis.web.app/github</loc>
+    <loc>https://ecstatic-turing-a45442.netlify.app/contact</loc>
   </url>
 </urlset>
