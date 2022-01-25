@@ -30,10 +30,9 @@
 
 ## :camera: Screenshots
 
-![Frontend screenshot](./imgs/lighthouse.png)
-![Frontend screenshot](./imgs/ratp.png)
-![Frontend screenshot](./imgs/about.png)
-![Frontend screenshot](./imgs/contact.png)
+![Frontend screenshot](./imgs/ratp-lh.png)
+![Frontend screenshot](./imgs/about-lh.png)
+![Frontend screenshot](./imgs/contact-lh.png)
 ![Frontend screenshot](./imgs/netlify.png)
 
 ## :signal_strength: Technologies
@@ -92,10 +91,11 @@ export function app(): express.Express {
 ## :cool: Features
 
 * Dummy `Robots.txt` & `sitemap.xml` documents added to improve Lighthouse score
+* Lighthouse scores: 97 - 99%
 
 ## :clipboard: Status, Testing & To-Do List
 
-* Status: Working PWR & SSR app deployed to Netlify. Lighthouse score > 90% for all pages
+* Status: Working PWR & SSR app deployed to Netlify. Lighthouse score > 97% for all pages
 * Testing: not tested yet
 * To-Do: Testing - services first then home page. Test nav? Add translation with menu select
 
