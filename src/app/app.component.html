@@ -1,14 +1,11 @@
 <head>
   <meta name="description" content="Home page shows API data" />
 </head>
-<body>
-  <h1>Updated Test Title</h1>
-  <p>test text</p>
-  <button
-    class="py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-400"
-  >
-    Hello
-  </button>
-</body>
-
-<router-outlet></router-outlet>
+<div class="app">
+  <app-nav></app-nav>
+  <main>
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>
