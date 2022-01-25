@@ -1,6 +1,6 @@
 # :zap: Angular PWA SSR
 
-* Angular app with Server Side Rendering working as a Progressive Web App. Deployed to Netlify.
+* Angular used to display data from RATP API with Server Side Rendering as a Progressive Web App. [Deployed to Netlify](https://ecstatic-turing-a45442.netlify.app/).
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-pwa-ssr?style=plastic)
@@ -26,10 +26,15 @@
 ## :books: General info
 
 * Using Angular Server Side Rendering (ngUniversal) and Service Workers for a Progressive Web App
+* Deployed from Github so each Commit causes an auto-deploy in Netlify. Netlify performs the build process. * **Important note:** I had to specify Node version in Netlify in `site-name/settings/deploys/Environment/Environment variables/` `key - value` `NODE_VERSION - 16.13.2` or deploy would fail - see image below
 
 ## :camera: Screenshots
 
-![Frontend screenshot](./img/lighthouse.png)
+![Frontend screenshot](./imgs/lighthouse.png)
+![Frontend screenshot](./imgs/ratp.png)
+![Frontend screenshot](./imgs/about.png)
+![Frontend screenshot](./imgs/contact.png)
+![Frontend screenshot](./imgs/netlify.png)
 
 ## :signal_strength: Technologies
 
@@ -86,17 +91,18 @@ export function app(): express.Express {
 
 ## :cool: Features
 
-* Dummy `Robots.txt` & `sitemap.xml` documents added to get perfect Lighthouse score
+* Dummy `Robots.txt` & `sitemap.xml` documents added to improve Lighthouse score
 
 ## :clipboard: Status, Testing & To-Do List
 
-* Status: Working basic SSR app with PWA deployed to Netlify. 100% perfect Lighthouse score
+* Status: Working PWR & SSR app deployed to Netlify. Lighthouse score > 90% for all pages
 * Testing: not tested yet
-* To-Do: Add content. `Robots.txt` & `sitemap.xml` files will need updating with correct data
+* To-Do: Testing - services first then home page. Test nav? Add translation with menu select
 
 ## :clap: Inspiration/General Tools
 
-* Google
+* [RATP API: Commerces de proximité agréés RATP](https://dataratp2.opendatasoft.com/explore/dataset/liste-des-commerces-de-proximite-agrees-ratp/api/?sort=code_postal)
+* [StackOverflow: Property has no initializer and is not definitely assigned in the constructor](https://stackoverflow.com/questions/64874221/property-has-no-initializer-and-is-not-definitely-assigned-in-the-constructor) includes useful summary of how to avoid errors with initializers
 
 ## :file_folder: License
 
