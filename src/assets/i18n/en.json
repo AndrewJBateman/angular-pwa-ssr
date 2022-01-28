@@ -1,0 +1,17 @@
+{
+  "navigation": {
+
+    "name": "Commerce",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "inputplace": "Enter a postal code"
+  },
+  "about": {
+    "title": "RATP Commerce API"
+  },
+  "contact": {
+    "by": "App by"
+  }
+}

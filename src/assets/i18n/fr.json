@@ -1,0 +1,16 @@
+{
+  "navigation": {
+    "name": "Commerces",
+    "about": "A propos",
+    "contact": "Contact"
+  },
+  "home": {
+    "inputplace": "Tapez un code postal"
+  },
+  "about": {
+    "title": "RATP Commerces API"
+  },
+  "contact": {
+    "by": "App par"
+  }
+}

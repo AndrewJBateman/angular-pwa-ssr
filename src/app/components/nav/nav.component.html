@@ -19,7 +19,7 @@
           alt="image of paris transport ratp"
           loading="lazy"
         />
-        <p class="pt-3">Commerces</p>
+        <p class="pt-3">{{ "navigation.name" | transloco }}</p>
       </div>
     </a>
   </div>
@@ -31,14 +31,17 @@
       aria-label="about nav link"
       routerLink="/about"
       routerLinkActive="nav-link-active"
-      >A propos</a
+      >{{ "navigation.about" | transloco }}</a
     >
     <a
       class="nav-right nav-link"
       aria-label="contact nav link"
       routerLink="/contact"
       routerLinkActive="nav-link-active"
-      >Contact</a
+      >{{ "navigation.contact" | transloco }}</a
     >
+    <button class="nav-lang-button" (click)="onSetLanguage('fr')">FR</button>
+    <button class="nav-lang-button" (click)="onSetLanguage('es')">ES</button>
+    <button class="nav-lang-button" (click)="onSetLanguage('en')">EN</button>
   </div>
 </nav>

@@ -1,0 +1,17 @@
+{
+  "navigation": {
+
+    "name": "Commercios",
+    "about": "Acerca de",
+    "contact": "Contacto"
+  },
+  "home": {
+    "inputplace": "Introduce un código postal"
+  },
+  "about": {
+    "title": "RATP Commercios API"
+  },
+  "contact": {
+    "by": "App por"
+  }
+}
