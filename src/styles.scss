@@ -34,6 +34,15 @@
     font-weight: bold;
   }
 
+  .nav-lang-button {
+    padding: 4px;
+    color: blue;
+
+    .active {
+      text-decoration: bold !important;
+    }
+  }
+
   .ratp-green {
     background-color: #00aa91;
   }
