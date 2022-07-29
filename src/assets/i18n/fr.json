@@ -8,7 +8,15 @@
     "inputplace": "Tapez un code postal"
   },
   "about": {
-    "title": "RATP Commerces API"
+    "title": "RATP Commerces API",
+    "para1bold": "Les données sur les commerces de proximité",
+    "para1-1": "sont obtenues à partir d'une recherche par code postal de l'API publique RATP. ",
+    "para1-2": "Ces commerces de proximité (librairies, points presse, débitants de tabac...) ",
+    "para1-3": "sont à la disposition des voyageurs pour l'achat de carnets de Tickets t+ et les ",
+    "para1-4": "rechargements Navigo Mois et Semaine ainsi que des passes Navigo Découverte.",
+    "para2bold": "Les données de la page de Contact",
+    "para2-1": "sont extraites de l'API Github.",
+    "link": "Voir le repo Github"
   },
   "contact": {
     "by": "App par"
