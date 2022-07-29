@@ -25,7 +25,10 @@
 
 ## :books: General info
 
+* User can enter a post code to search for all commercial enterprises around the RATP station in that post code
+* Data comes from the RATP API
 * Using Angular Server Side Rendering (ngUniversal) and Service Workers for a Progressive Web App
+* Includes Transloco i18n translation json files so user can switch languages from nav buttons
 * Deployed from Github so each Commit causes an auto-deploy in Netlify. Netlify performs the build process. * **Important note:** I had to specify Node version in Netlify in `site-name/settings/deploys/Environment/Environment variables/` `key - value` `NODE_VERSION - 16.13.2` or deploy would fail - see image below
 
 ## :camera: Screenshots
@@ -41,6 +44,7 @@
 * [Angular Universal v13](https://angular.io/guide/universal) Server-Side Rendering(SSR) by a Node Express web server
 * [Angular Express Engine v13](https://www.npmjs.com/package/@nguniversal/express-engine) for running Angular Apps on the server for server side rendering
 * [Tailwind CSS v3](https://tailwindcss.com/)
+* [Transloco v3](https://ngneat.github.io/transloco/) used for i18n translations
 * [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) to check quality of website
 
 ## :floppy_disk: Setup
@@ -97,7 +101,7 @@ export function app(): express.Express {
 
 * Status: Working PWR & SSR app deployed to Netlify. Lighthouse score > 97% for all pages
 * Testing: not tested yet
-* To-Do: Testing - services first then home page. Test nav? Add translation with menu select
+* To-Do: Add eslint?, Testing - services first then home page. Test nav? Add translation with menu select
 
 ## :clap: Inspiration/General Tools
 
