@@ -41,9 +41,9 @@
 
 ## :signal_strength: Technologies
 
-* [Angular framework v13](https://angular.io/)
-* [Angular Universal v13](https://angular.io/guide/universal) Server-Side Rendering(SSR) by a Node Express web server
-* [Angular Express Engine v13](https://www.npmjs.com/package/@nguniversal/express-engine) for running Angular Apps on the server for server side rendering
+* [Angular framework v14](https://angular.io/)
+* [Angular Universal v14](https://angular.io/guide/universal) Server-Side Rendering(SSR) by a Node Express web server
+* [Angular Express Engine v14](https://www.npmjs.com/package/@nguniversal/express-engine) for running Angular Apps on the server for server side rendering
 * [Tailwind CSS v3](https://tailwindcss.com/)
 * [Transloco v3](https://ngneat.github.io/transloco/) used for i18n translations
 * [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) to check quality of website
@@ -106,7 +106,7 @@ export function app(): express.Express {
 
 ## :clap: Inspiration/General Tools
 
-* [RATP API: Commerces de proximité agréés RATP](https://dataratp2.opendatasoft.com/explore/dataset/liste-des-commerces-de-proximite-agrees-ratp/api/?sort=code_postal)
+* [RATP API: Commerces de proximité agréés RATP](https://dataratp2.opendatasoft.com/explore/dataset/commerces-de-proximite-agrees-ratp/information/)
 * [StackOverflow: Property has no initializer and is not definitely assigned in the constructor](https://stackoverflow.com/questions/64874221/property-has-no-initializer-and-is-not-definitely-assigned-in-the-constructor) includes useful summary of how to avoid errors with initializers
 
 ## :file_folder: License
