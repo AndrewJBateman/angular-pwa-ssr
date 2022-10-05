@@ -20,7 +20,7 @@ export class GithubService {
       catchError((err) => {
         return throwError(() =>
           console.log(
-            'There was a problem fetching data from the RATP API, error: ',
+            'There was a problem fetching data from the Github API, error: ',
             err
           )
         );

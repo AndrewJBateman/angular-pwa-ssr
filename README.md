@@ -1,6 +1,6 @@
 # :zap: Angular PWA SSR
 
-* Angular used to display data from RATP API with Server Side Rendering as a Progressive Web App. [Deployed to Netlify](https://ecstatic-turing-a45442.netlify.app/).
+* Angular used to display data from an API with Server Side Rendering as a Progressive Web App.[Deployed to Netlify](https://ecstatic-turing-a45442.netlify.app/).
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-pwa-ssr?style=plastic)
@@ -16,11 +16,12 @@
   * [:camera: Screenshots](#camera-screenshots)
   * [:signal_strength: Technologies](#signal_strength-technologies)
   * [:floppy_disk: Setup](#floppy_disk-setup)
-  * [:flashlight: Testing](#flashlight-testing)
+  * [:wrench: Testing](#wrench-testing)
   * [:computer: Code Examples](#computer-code-examples)
   * [:cool: Features](#cool-features)
-  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
-  * [:clap: Inspiration](#clap-inspiration)
+  * [:clipboard: Status, Testing & To-Do List](#clipboard-status-testing--to-do-list)
+  * [:clap: Inspiration/General Tools](#clap-inspirationgeneral-tools)
+  * [:file_folder: License](#file_folder-license)
   * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
