@@ -43,9 +43,9 @@
 
 ## :signal_strength: Technologies
 
-* [Angular framework v14](https://angular.io/)
-* [Angular Universal v14](https://angular.io/guide/universal) Server-Side Rendering(SSR) by a Node Express web server
-* [Angular Express Engine v14](https://www.npmjs.com/package/@nguniversal/express-engine) for running Angular Apps on the server for server side rendering
+* [Angular framework v15](https://angular.io/)
+* [Angular Universal v15](https://angular.io/guide/universal) Server-Side Rendering(SSR) by a Node Express web server
+* [Angular Express Engine v15](https://www.npmjs.com/package/@nguniversal/express-engine) for running Angular Apps on the server for server side rendering
 * [Tailwind CSS v3](https://tailwindcss.com/)
 * [Transloco v3](https://ngneat.github.io/transloco/) used for i18n translations
 * [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) to check quality of website
