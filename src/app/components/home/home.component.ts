@@ -28,7 +28,9 @@ export class HomeComponent implements OnInit {
 
   constructor(private ratpService: RatpService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.ratpService.initialise();
+  }
 
   onSubmitForm(postCodeSearch: NgForm): void {
     this.onSearchData(postCodeSearch.value.search);
