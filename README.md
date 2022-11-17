@@ -30,7 +30,9 @@
 * Data comes from the RATP API
 * Using Angular Server Side Rendering (ngUniversal) and Service Workers for a Progressive Web App
 * Includes Transloco i18n translation json files so user can switch languages from nav buttons
-* Deployed from Github so each Commit causes an auto-deploy in Netlify. Netlify performs the build process. * **Important note:** I had to specify Node version in Netlify in `site-name/settings/deploys/Environment/Environment variables/` `key - value` `NODE_VERSION - 16.13.2` or deploy would fail - see image below
+* Deployed from Github so each Commit causes an auto-deploy in Netlify. Netlify performs the build process.
+
+* **Important note:** I had to specify Node version in Netlify in `site-name/settings/deploys/Environment/Environment variables/` `key - value` `NODE_VERSION - 16.13.2` or deploy would fail - see image below
 
 ## :camera: Screenshots
 
@@ -47,6 +49,7 @@
 * [Tailwind CSS v3](https://tailwindcss.com/)
 * [Transloco v3](https://ngneat.github.io/transloco/) used for i18n translations
 * [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) to check quality of website
+* [SSR Cookie Service v15](https://www.npmjs.com/package/ngx-cookie-service) to read, set and delete browser cookies
 
 ## :floppy_disk: Setup
 
