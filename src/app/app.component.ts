@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 import { Meta } from "@angular/platform-browser";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
-  title = 'angular-pwa-ssr';
+  title = "angular-pwa-ssr";
   version = "Angular version 13";
 
   constructor(private metaTagService: Meta) {}
@@ -16,13 +16,13 @@ export class AppComponent {
     this.metaTagService.addTags([
       {
         name: "keywords",
-        content: "Angular SEO Integration, contact, about, API",
+        content: "Angular SEO Integration, contact, about, API"
       },
       { name: "robots", content: "index" },
       { name: "author", content: "Andrew Bateman" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "date", content: "2021-05-16", scheme: "YYYY-MM-DD" },
-      { charset: "UTF-8" },
+      { charset: "UTF-8" }
     ]);
   }
 }

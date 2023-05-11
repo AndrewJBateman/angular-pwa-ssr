@@ -10,4 +10,4 @@ import { AboutComponent } from './about.component';
   imports: [CommonModule, AboutRoutingModule, TranslocoRootModule],
   exports: [AboutComponent],
 })
-export class AboutModule {}
+export default class AboutModule {}
