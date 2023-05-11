@@ -8,7 +8,7 @@ import { Meta } from "@angular/platform-browser";
 })
 export class AppComponent {
   title = "angular-pwa-ssr";
-  version = "Angular version 13";
+  version = "Angular version 16";
 
   constructor(private metaTagService: Meta) {}
 
