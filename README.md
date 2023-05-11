@@ -11,17 +11,17 @@
 ## :page_facing_up: Table of contents
 
 * [:zap: Angular PWA SSR](#zap-angular-pwa-ssr)
-  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:page\_facing\_up: Table of contents](#page_facing_up-table-of-contents)
   * [:books: General info](#books-general-info)
   * [:camera: Screenshots](#camera-screenshots)
-  * [:signal_strength: Technologies](#signal_strength-technologies)
-  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:signal\_strength: Technologies](#signal_strength-technologies)
+  * [:floppy\_disk: Setup](#floppy_disk-setup)
   * [:wrench: Testing](#wrench-testing)
   * [:computer: Code Examples](#computer-code-examples)
   * [:cool: Features](#cool-features)
-  * [:clipboard: Status, Testing & To-Do List](#clipboard-status-testing--to-do-list)
+  * [:clipboard: Status, Testing \& To-Do List](#clipboard-status-testing--to-do-list)
   * [:clap: Inspiration/General Tools](#clap-inspirationgeneral-tools)
-  * [:file_folder: License](#file_folder-license)
+  * [:file\_folder: License](#file_folder-license)
   * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
@@ -43,20 +43,20 @@
 
 ## :signal_strength: Technologies
 
-* [Angular framework v15](https://angular.io/)
-* [Angular Universal v15](https://angular.io/guide/universal) Server-Side Rendering(SSR) by a Node Express web server
-* [Angular Express Engine v15](https://www.npmjs.com/package/@nguniversal/express-engine) for running Angular Apps on the server for server side rendering
+* [Angular framework v16](https://angular.io/)
+* [Angular Universal v16](https://angular.io/guide/universal) Server-Side Rendering(SSR) by a Node Express web server
+* [Angular Express Engine v16](https://www.npmjs.com/package/@nguniversal/express-engine) for running Angular Apps on the server for server side rendering
 * [Tailwind CSS v3](https://tailwindcss.com/)
-* [Transloco v3](https://ngneat.github.io/transloco/) used for i18n translations
+* [Transloco v4](https://ngneat.github.io/transloco/) used for i18n translations
 * [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) to check quality of website
-* [SSR Cookie Service v15](https://www.npmjs.com/package/ngx-cookie-service) to read, set and delete browser cookies
+* [SSR Cookie Service v16](https://www.npmjs.com/package/ngx-cookie-service) to read, set and delete browser cookies
 
 ## :floppy_disk: Setup
 
 * Install dependencies using `npm i`
 * Run `npm outdated` to see if any dependencies are outdated.
 * Run `ng serve` for a non-SSR dev server. Frontend will open at `http://localhost:4200/` - refreshes on code changes
-* Run `npm run dev:ssr` for an SSR dev server. Frontend will open at `http://localhost:4200/` - refreshes on code changes
+* Run `npm run dev:ssr` for an SSR dev server.
 * Run `npm run build` to generate a build file without SSR
 * Run `npm run build:ssr` to generate a build file with SSR. Add `defer` to browser CSS file ref.
 * Run `npm run serve:ssr` to see on a dev server `http://localhost:4000`
@@ -64,7 +64,7 @@
 
 ## :wrench: Testing
 
-* Run `ng test` to run Jasmine unit tests via [Karma](https://karma-runner.github.io) - passes 2/2 tests
+* Run `ng test` to run Jasmine unit tests via [Karma](https://karma-runner.github.io) - passes 2/6 tests
 
 ## :computer: Code Examples
 
@@ -105,7 +105,7 @@ export function app(): express.Express {
 
 * Status: Working PWR & SSR app deployed to Netlify. Lighthouse score > 97% for all pages
 * Testing: not tested yet
-* To-Do: Add eslint?, Testing - services first then home page. Test nav? Add translation with menu select
+* To-Do: Fix 4 tests - services first then home page. Test nav? . Add eslint?, Add translation with menu select
 
 ## :clap: Inspiration/General Tools
 
@@ -118,4 +118,4 @@ export function app(): express.Express {
 
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: `gomezbateman@yahoo.com`
