@@ -1,16 +1,18 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { AboutComponent } from './about.component';
+import { AboutComponent } from "./about.component";
+import { HttpClientTestingModule } from "@angular/common/http/testing";
+import { TranslocoRootModule } from "src/app/transloco-root.module";
 
-describe('AboutComponent', () => {
+describe("AboutComponent", () => {
   let component: AboutComponent;
   let fixture: ComponentFixture<AboutComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AboutComponent ]
-    })
-    .compileComponents();
+      declarations: [AboutComponent],
+      imports: [HttpClientTestingModule, TranslocoRootModule]
+    }).compileComponents();
   });
 
   beforeEach(() => {
@@ -19,7 +21,7 @@ describe('AboutComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
