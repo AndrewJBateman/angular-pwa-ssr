@@ -104,13 +104,14 @@ export function app(): express.Express {
 ## :clipboard: Status, Testing & To-Do List
 
 * Status: Working PWR & SSR app deployed to Netlify. Lighthouse score > 97% for all pages
-* Testing: not tested yet
-* To-Do: Fix 4 tests - services first then home page. Test nav? . Add eslint?, Add translation with menu select
+* Testing: 6/6 tests pass
+* To-Do: Add tests, add eslint
 
 ## :clap: Inspiration/General Tools
 
 * [RATP API: Commerces de proximité agréés RATP](https://dataratp2.opendatasoft.com/explore/dataset/commerces-de-proximite-agrees-ratp/information/)
 * [StackOverflow: Property has no initializer and is not definitely assigned in the constructor](https://stackoverflow.com/questions/64874221/property-has-no-initializer-and-is-not-definitely-assigned-in-the-constructor) includes useful summary of how to avoid errors with initializers
+* [Code Shots with Profanis: Discover How to Unit Test Angular Components with RouterTestingHarness](https://www.youtube.com/watch?v=RG5iN783rAY)
 
 ## :file_folder: License
 
