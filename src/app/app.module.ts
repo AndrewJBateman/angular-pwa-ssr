@@ -1,4 +1,4 @@
-import { NgModule, isDevMode } from "@angular/core";
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule, isDevMode } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
@@ -28,6 +28,7 @@ import { NavComponent } from "./components/nav/nav.component";
     }),
     TranslocoRootModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },
     SsrCookieService
